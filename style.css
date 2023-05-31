@@ -1,0 +1,145 @@
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: hsl(226, 43%, 10%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+.display {
+  display: none;
+}
+.lower_card a {
+  cursor: pointer;
+}
+.card {
+  display: flex;
+  gap: 20px;
+}
+.jeremy {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.upper_card {
+  background-color: hsl(246, 80%, 60%);
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+}
+.upper_card h1 {
+  font-size: 24px;
+  width: 100px;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.upper_card span {
+  font-weight: 200;
+  font-size: 14px;
+  color: hsl(236, 100%, 87%);
+}
+.lower_card {
+  background-color: hsl(235, 46%, 20%);
+  padding: 20px;
+  z-index: -1;
+  margin-top: -20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: hsl(236, 100%, 87%);
+}
+.lower_card p {
+  cursor: pointer;
+}
+.work {
+  width: 190px;
+}
+.upper_work {
+  background-color: hsl(15, 100%, 70%);
+  z-index: -1;
+  position: relative;
+  margin-bottom: -60px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 5px;
+}
+.lower_work {
+  background-color: hsl(235, 46%, 20%);
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}
+.lower_work_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lower_work_header h2 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.lower_work h1 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.exercise {
+  background-color: hsl(145, 58%, 55%);
+  padding: 10px;
+}
+.exercise img {
+  width: 79px;
+}
+.play {
+  background-color: hsl(195, 74%, 62%);
+}
+.social {
+  background-color: hsl(264, 64%, 52%);
+}
+.social img {
+  height: 70px;
+}
+.study {
+  background-color: hsl(348, 100%, 68%);
+}
+.self-care {
+  background-color: hsl(43, 84%, 65%);
+}
+
+@media screen and (max-width: 720px) {
+  .card {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .start {
+    width: 100%;
+  }
+  .upper_card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .lower_card {
+    display: flex;
+    justify-content: space-around;
+  }
+  .container {
+    width: 100%;
+    gap: 20px;
+  }
+  .work {
+    width: 100%;
+  }
+  .interest {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
